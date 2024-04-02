@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
             timerInterval = setInterval(function() {
                 if (hours === 0 && minutes === 0 && seconds === 0) {
                     clearInterval(timerInterval);
-                    timerInterval = null;
+                    timerInput.style.display = "block";
+                    alert("타이머가 종료되었습니다!");
                 } else {
                     if (seconds > 0) {
                         seconds--;
@@ -60,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function() {
         minutesInput.value = "";
         secondsInput.value = "";
         timerShow.textContent = "00:00:00";
+
         timerInput.style.display = "block";
     });
 });
