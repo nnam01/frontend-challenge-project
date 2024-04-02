@@ -1,0 +1,43 @@
+#container{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#timerDisplay{
+    height: 150px;
+    border: 3px solid grey;
+    padding: 20px 20px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#timerShow{
+    border: 3px solid black;
+    font-size: 50px;
+    padding: 5px;
+    text-align: center;
+}
+
+#startBtn, #stopBtn, #resetBtn{
+    border: 3px solid black;
+    margin-top: 10px;
+    font-size: 25px;
+    background-color: white;
+}
+
+#timerInput input{
+    margin-top: 20px;
+    width: 50px; height: 25px;
+    border-radius: 500px; 
+    font-size: 15px;
+    
+    text-align: center;
+    color: darkgrey;
+    background-color: white;
+}
