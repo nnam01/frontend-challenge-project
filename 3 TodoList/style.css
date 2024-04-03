@@ -1,0 +1,76 @@
+#container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#todoApp {
+    width: 100%;
+    max-width: 540px;
+    border: 3px solid grey;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+h1{
+    font-size:  50px;
+    font-weight: lighter;
+    letter-spacing: -5px;    
+}
+
+button{
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.input {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center; 
+}
+
+.input input[type="text"] {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.input button {
+    padding: 5px 10px;
+    background-color: mediumseagreen;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 10px; /* 입력 필드와 버튼 사이의 여백을 추가합니다. */
+}
+
+.selected {
+    background-color: lightgray;
+    color: black;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+li span[contenteditable="true"] {
+    display: inline-block;
+    padding: 5px;
+    border: 2px solid gainsboro;
+    border-radius: 10px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do List</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="container">
+            <div id="todoApp">
+                <h1>TO-DO LIST</h1>
+                <button id="alllist" onclick="filterTodoList('alllist')">전체</button>
+                <button id="complete" onclick="filterTodoList('complete')">완료</button>
+                <button id="no_complete" onclick="filterTodoList('no_complete')">미완료</button>
+                <div class="input">
+                    <input id="item" type="text" placeholder="할 일을 작성해주세요.">
+                    <input type="radio" name="priority" value="낮음"> 낮음
+                    <input type="radio" name="priority" value="보통"> 보통
+                    <input type="radio" name="priority" value="높음"> 높음
+                    <input type="radio" name="priority" value="아주 높음"> 아주 높음
+                    <button id="add" onclick="addItem()">추가</button>
+                </div>
+                <hr>
+                <ul id="list"></ul>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+    </html>
