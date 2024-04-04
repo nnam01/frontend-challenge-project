@@ -1,0 +1,83 @@
+/* CSS 코드를 여기에 입력하세요 */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+#container {
+  font-family: Arial, sans-serif;
+  width: 500px; /* 달력 크기 조절 */
+  margin: 0 auto;
+}
+
+
+#month-data button {
+  background-color: mediumblue;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  margin: 0 5px; /* 버튼 사이의 간격 조절 */
+  margin-bottom: 15px;
+}
+
+#month-year{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.date-month {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.date-month th,
+.date-month td {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  color: gray;
+  position: relative;
+}
+
+.memo-marker {
+  width: 10px;
+  height: 10px;
+  background-color: mediumblue;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+
+.memoItem {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#memo {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  margin-bottom: 10px;
+  border: 1px solid gray;
+  padding: 5px;
+}
+
+#memoItem button {
+  padding: 8px 16px;
+  background-color: mediumblue;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+#memoItem button:hover {
+  background-color: darkblue;
+}

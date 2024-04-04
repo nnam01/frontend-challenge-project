@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+</html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calendar</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id = "container">
+            <div id = "month-data">
+                <button type ="button" id ="month-prev">←</button>
+                <span id ="month-year"></span>
+                <button type ="button" id ="month-next">→</button>
+            </div>
+            <table class="date-month">
+                <thead>
+                    <tr>
+                        <th>일</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                    </tr>
+                </thead>
+                <tbody ></tbody>
+            </table>
+            <br>
+            <div class="memoItem" id="memoItem">
+                <textarea id="memo" placeholder="메모를 입력하세요."></textarea>
+                <button onclick="saveMemo()">저장</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
