@@ -1,0 +1,114 @@
+#wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#brand-logo img {
+    max-width: 200px;
+    height: auto;
+}
+ol,ul {
+    list-style: none;
+}
+
+nav[type="NAVI"] ul{
+    display: flex;
+    color :lightgrey;
+    margin-right: 180px;
+
+}
+nav[type="USER"] ul{
+    display: flex;
+    margin-left: 180px;
+    color: skyblue;
+}
+nav[type="USER"] ul li:first-child {
+    color: lightgrey; 
+}
+
+nav[type="NAVI"] ul li, nav[type="USER"] ul li {
+    padding: 0 15px;
+    font-size : 13px;
+    font-weight: bold;
+}
+
+#main {
+    width: 100%;
+}
+
+hr {
+    background-color : lightgray;
+    border : 0;
+    height: 1px;
+}
+
+section {
+    display: flex;
+    flex-direction: column; /* 아이템을 세로로 쌓도록 설정 */
+    align-items: center; /* 수평 가운데 정렬 */
+}
+
+.main-first {
+    display: flex;
+}
+
+.main-left img,
+.main-right img {
+    margin: 10px; /* 이미지 간의 간격 제거 */
+}
+
+
+.second-title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.second-contents {
+    font-size: 15px;
+}
+
+.main-third{
+    margin-top: 30px;
+}
+
+#footer {
+    margin-top: 20px; 
+}
+#footer hr {
+    background-color: lightgray; 
+    border: none;
+    height: 1px;
+}
+
+.footer-first {
+    display: flex;
+}
+.footer-first ul{
+    display: flex;
+}
+
+.footer-first ul li {
+    margin-right: 20px;
+    font-size: 14px;
+}
+
+#brand-logo2 img {
+    max-width: 200px;
+    height: auto;
+}
+
+.footer-second p {
+    color: lightgrey;
+    font-size: 13px;
+}
+
