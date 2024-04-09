@@ -5,3 +5,4 @@
 ### Calendar(https://nnam01.github.io/frontend-challenge-project/4%20Calendar/index.html)
 ### MainPage(https://nnam01.github.io/frontend-challenge-project/5%20Mainpage-miniintern/index.html)
 ### ImageSlide(https://nnam01.github.io/frontend-challenge-project/6%20ImageSlide/index.html)
+### ImageSlide-Auto(https://nnam01.github.io/frontend-challenge-project/7%20ImageSlide-Auto/index.html)
