@@ -1,0 +1,205 @@
+#wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#brand-logo img {
+    max-width: 200px;
+    height: auto;
+}
+ol,ul {
+    list-style: none;
+}
+
+
+nav[type="NAVI"] ul{
+    display: flex;
+    color :lightgrey;
+    margin-right: 180px;
+
+}
+nav[type="USER"] ul{
+    display: flex;
+    margin-left: 180px;
+    color: skyblue;
+}
+nav[type="USER"] ul li:first-child {
+    color: lightgrey; 
+}
+
+nav[type="NAVI"] ul li, nav[type="USER"] ul li {
+    padding: 0 15px;
+    font-size : 13px;
+    font-weight: bold;
+}
+
+#main {
+    width: 100%;
+}
+
+hr {
+    background-color : lightgray;
+    border : 0;
+    height: 1px;
+}
+
+section {
+    display: flex;
+    flex-direction: column; /* 아이템을 세로로 쌓도록 설정 */
+    align-items: center; /* 수평 가운데 정렬 */
+}
+
+.main-first {
+    display: flex;
+}
+
+.main-left img,
+.main-right img {
+    margin: 10px; /* 이미지 간의 간격 제거 */
+}
+
+
+.second-title, .fourth-title, .sixth-title, .seventh-title{
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.second-contents, .fourth-contents, .sixth-contents, .seventh-contents{
+    font-size: 15px;
+}
+
+.main-third{
+    margin-top: 50px;
+    display: flex;
+}
+.third-contents {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25px;
+    margin-right: 250px;
+    justify-content: center;
+}
+
+.third-contents p {
+    line-height: 0; /* 텍스트 간격을 조정합니다. */
+}
+
+#footer {
+    margin-top: 20px; 
+}
+#footer hr {
+    background-color: lightgray; 
+    border: none;
+    height: 1px;
+}
+
+.footer-first {
+    display: flex;
+    justify-content: space-between; /* 요소들을 좌우로 분산 정렬 */
+    align-items: center; /* 요소들을 수직으로 정렬 */
+}
+
+#brand-logo2 img{
+    max-width: 200px;
+}
+.footer-first ul{
+    display: flex;
+   
+}
+
+.footer-first ul li {
+    margin-left: 20px;
+    font-size: 14px;
+}
+.footer-first div {
+    margin-right: 100px; 
+}
+
+.footer-first div:last-child {
+    margin-left: 100px;
+}
+.footer-second {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+.footer-second div {
+    margin-right: 170px; 
+}
+
+.footer-second div:last-child {
+    margin-left: 170px; 
+}
+.footer-last{
+    display: flex;
+    color: lightgrey;
+    font-size: 12px;
+    line-height: 0.5;
+}
+.footer-last-right a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+
+
+
+.carousel-container {
+    width: 335px;
+    height: 226px;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+    
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+    
+  .carousel-item {
+    background-image: url('./img-bg.png');
+    flex: 0 0 335px;
+    height: 226px;
+    display: flex;
+    color:white;
+    font-size: 23px;
+    font-weight: bold;
+    padding-top: 30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+    
+  .carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .carousel-prev {
+    left: 10px;
+  }
+    
+  .carousel-next {
+    right: 10px;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+  }
+    
