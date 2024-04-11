@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-size: 35px;
+    font-weight: 800;
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    background-color: skyblue;
+    padding: 15px 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+}
+  
+.line {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 5px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    width: 200px;
+    height: 100%;
+    background-color: skyblue;
+    transition: left 0.3s ease;
+}
+
+.sidebar.active {
+    left: 0;
+}
+  
+.sidebar .menu a {
+    display: block;
+    padding: 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    margin-left: 15px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .menu {
+        display: none;
+    }
+    
+    .hamburger-menu {
+        display: block;
+    }
+  
+    .sidebar.active {
+        left: 0;
+    }
+}
